@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: jwt-service
+  datasource:
+    url: jdbc:mysql://localhost:3309/jwt_service
+    username: root
+    password: password
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: create-drop
+    database: mysql
+    database-platform: org.hibernate.dialect.MySQLDialect
+    properties:
+      hibernate:
+        format_sql: true
+server:
+  port: 3377
